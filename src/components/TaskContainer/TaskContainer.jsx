@@ -3,6 +3,7 @@ import axios from "axios";
 import AppContext from "../../store/AppContext";
 import TaskList from "../TaskList/TaskList";
 import TaskForm from "../TaskForm/TaskForm";
+import TasksSorter from "../TasksSorter/TasksSorter";
 import "./TaskContainer.scss";
 
 const TaskContainer = () => {
@@ -26,6 +27,7 @@ const TaskContainer = () => {
   return (
     <div className="taskContainer">
       <TaskForm />
+      <TasksSorter />
       <TaskList />
     </div>
   );
